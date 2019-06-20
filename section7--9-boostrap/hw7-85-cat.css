@@ -1,0 +1,56 @@
+/* learn new things
+  1. insert background to body, use
+    background-size: cover
+    background-position: center
+    and html {height: 100%}
+  2. text shadowing
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
+                 0px 18px 23px rgba(0,0,0,0.1);
+  3. If you want your bootstrap styled website to be responsive on mobile then be sure to add the following meta tag to your <head>  element, above the <title>  tag:
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+*/
+
+
+body {
+  background: url(https://images.unsplash.com/photo-1415369629372-26f2fe60c467);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Lato;
+  color: white;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 5em;
+}
+
+#main-page {
+  text-align: center;
+  padding-top: 15%;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+    0px 8px 13px rgba(0, 0, 0, 0.1),
+    0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+hr {
+  width: 40%;
+  border-top: 1px solid #f8f8f8;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#footer {
+  /*position to the botton*/
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+
+  /*style*/
+  background: gainsboro;
+  height: 50px;
+  text-align: center;
+  font-family: "Lobster";
+  padding: 10px 0 0 0;
+}

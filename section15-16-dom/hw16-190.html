@@ -1,0 +1,31 @@
+<!-- 16-186 to 16-193  - dom events
+var button = document.querySelector('button');
+button.addEventListener('click', function() {…}
+button.addEventListener('change', function() {…}
+button.addEventListener(mouseover, function() {…}
+button.addEventListener(mouseout, function() {…}  - Button toggle background color
+- count # events on mdn -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>hw16-190</title>
+  <style>
+    .winningCond {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+  <p>Playing to: <span id="numWinDisplay">5</span></p>
+  <input type="number" id="numWinInput">
+  <button id="p1Button">Player One</button>
+  <button id="p2Button">Player Two</button>
+  <button id="reset">Reset</button>
+  <p id="gameOverPara"></p>
+
+  <script src="hw16-190.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!-- 15-180 to 15-	- manipulate css/style
+var tag = document.getElementsByTagName('h1');
+tag.classList.add('toggleWarning');
+tag.classList
+tag.classList.add
+tag.classList.remove
+tag.classList.toggle
+- manipulate text and content
+tag.textContent  // content only, not render html tags
+tag.innerHTML   // include html, render html tags
+- manipulate attribute
+var link = document.querySelector('a');
+link.getAttribute('href');
+link.setAttribute('href', 'https://www.yahoo.com/');
+- dom events
+var button = document.querySelector('button');
+button.addEventListener('click', function() {…}
+- others
+	Button toggle background color -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>hw16-187</title>
+  <style>
+    .toggleWarning {
+      background: purple;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Color Changing Exercise</h1>
+  <button>CLICK ME</button>
+  <script src="hw16-187.js"></script>
+</body>
+
+</html>

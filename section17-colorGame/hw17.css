@@ -1,0 +1,83 @@
+/* begin part */
+body {
+  text-align: center;
+  margin: 0;
+  background: #232323;
+  font-family: "Montserrat", "Avenir";
+}
+
+#beginSection{
+  background: steelblue; 
+  padding: 20px 0;
+  text-transform: uppercase;
+  color: white;
+  font-weight: normal;
+  line-height: 1.1;
+}
+
+h1 {
+  margin: 0;
+  font-weight: normal;
+}
+
+#colorResultDisplay {
+  font-size: 2em;
+}
+
+button:hover {
+  background: rgb(7, 43, 90);
+  color: white;
+}
+
+/* button part */
+#buttonSection {
+  background: white;
+  height: 40px;
+  display: flex;           /* <======== NEW ===========*/
+  justify-content: center; /* <======== NEW ==========*/
+}
+
+#resultDisplay {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  margin: auto 0;
+}
+
+button {
+  border: none;
+  text-transform: uppercase;
+  height: 100%;
+  letter-spacing: 1px;
+  color: steelblue;
+  font-size: 100%;
+  font-weight: 700;
+  outline: none;                 /* <======== NEW ===========*/
+  transition: all 0.3s;          /* <======== NEW ===========*/
+	-webkit-transition: all 0.3s;  /* <======== NEW ===========*/
+	-moz-transition: all 0.3s;     /* <======== NEW ===========*/
+}
+
+.selected {
+  background: steelblue;
+  color: white;
+}
+
+/* main part */
+#gameSection {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.square {
+  background: pink;
+  width: 30%;
+  margin: 1.6%;
+  float: left;
+  padding-bottom: 30%;
+  float: left;
+  border-radius: 15%;               /* <======== NEW ===========*/
+	transition: background 0.6s;      /* <======== NEW ===========*/
+	-webkit-transition: background 0.6s;/* <======== NEW ===========*/
+	-moz-transition: background 0.6s;   /* <======== NEW ===========*/
+}

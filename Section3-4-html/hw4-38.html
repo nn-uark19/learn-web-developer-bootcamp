@@ -1,0 +1,63 @@
+<!-- to seperate the stuff in <form>, we can use <p> or <div> -->
+<!-- topic: forms
+	from 4-32 to 4-40
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hw4-38</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form>
+		<div>
+			<label for="fname">First Name: </label>
+			<input id="fname" type="text" name="fname_input" placeholder="John" required>
+			<label for="lname">Last Name: </label>
+			<input id="lname" type="text" name="lname_input" placeholder="Smith">
+		</div>
+		<div>
+			<label for="male">Male</label>
+			<input id="male" type="radio" name="gender" value="male">
+			<label for="female">Female</label>
+			<input id="female" type="radio" name="gender" value="female">
+			<label for="others">Other</label>
+			<input id="others" type="radio" name="gender" value="others">
+		</div>
+		<div>
+			<label for="email">Email:</label>
+			<input id="email" type="email" name="email_input" placeholder="your email" required="">
+			<label for="password">Password:</label>
+			<input id="password" type="password" name="password_input" pattern=".{5,10}" required title="5 to 10 characters">
+		</div>
+		<div>Birthday
+			<select name="month">
+				<option selected>Month</option>
+				<option>October</option>
+				<option>November</option>
+				<option>December</option>			
+			</select>
+			<select name="day">
+				<option selected>Day</option>
+				<option>16</option>
+				<option>17</option>
+				<option>17</option>
+			</select>
+			<select name="year">
+				<option selected>Year</option>
+				<option>1992</option>
+				<option>1993</option>
+				<option>1994</option>
+			</select>
+		</div>
+		<div>I agree to the terms and conditions
+			<input type="checkbox" name="term">
+		</div>
+
+		<br>
+		<button>Submit</button>
+	</form>
+
+</body>
+</html>
