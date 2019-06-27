@@ -1,0 +1,12 @@
+<% include partials/header%>
+
+<h1>Result page</h1>
+
+<% movies['Search'].forEach(function(movie){ %>
+  <li><%=movie.Title%> - <%= movie.Year%> - <%=movie.imdbID%> - <%= movie.Type%> - <img src='<%=movie.Poster%>'></li> 
+<%})%>
+
+<hr>
+<a href='/'>Search again</a>
+
+<% include partials/footer%>
